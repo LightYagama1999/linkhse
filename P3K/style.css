@@ -1,0 +1,43 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #fff;
+}
+
+.custom-heading {
+  color: red;
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin-top: 3px;
+}
+
+#about {
+  background-color: red;
+}
+
+#projects {
+  background-color: #fff;
+}
+
+#contact {
+  background-color: red;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+footer {
+  background-color: white;
+  margin-top: -1px;
+}
+
+.mb-3,
+h2 {
+  color: #fff;
+  font-family: "Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Petro Perkasa Indonesia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: red">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo2-removebg-preview.png" alt="Logo" width="50" height="50">
+        </a>
+        
+        </button>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/dokterjilbab.png" alt="Logo Petro" width="250" />
+      <h1 class="display-4 custom-heading">Form Pemeriksaan Kesehatan</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -10px">
+        <path
+          fill="red"
+          fill-opacity="1"
+          d="M0,160L48,138.7C96,117,192,75,288,85.3C384,96,480,160,576,181.3C672,203,768,181,864,149.3C960,117,1056,75,1152,58.7C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhirjumbotron -->
+    <!-- Form -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Form Pemeriksaan Kesehatan</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terima Kasih!</strong> Form anda sudah kami terima
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="Submit-Form-to-Google-Sheets">
+              <div class="mb-3">
+                <label for="Perusahaan" class="form-label">Perusahaan</label>
+                <input type="text" id="Perusahaan" name="Perusahaan" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" id="nama" name="Nama" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="Jabatan" class="form-label">Jabatan</label>
+                <input type="text" id="nama" name="Jabatan" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="Usia" class="form-label">Usia</label>
+                <input type="number" id="Usia" name="Usia" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="Timbangan" class="form-label">Timbangan / Berat Badan</label>
+                <input type="number" id="Timbangan" name="Timbangan" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="Kolesterol" class="form-label">Kolesterol</label>
+                <input type="text" id="Kolesterol" name="Kolesterol" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="Gula Darah" class="form-label">Gula Darah</label>
+                <input type="text" id="GulaDarah" name="Gula Darah" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="Asam Urat" class="form-label">Asam urat</label>
+                <input type="text" id="AsamUrat" name="Asam Urat" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="Tekanan Darah" class="form-label">Tekanan Darah</label>
+                <input type="text" id="TekananDarah" name="Tekanan Darah" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Keluhan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="Keluhan" placeholder="Keluhan..."></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Keterangan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="Keterangan" placeholder="Fit atau lainnya..."></textarea>
+              </div>
+              <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-primary btn-kirim">KIRIM DATA</button>
+                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="white"
+          fill-opacity="1"
+          d="M0,192L48,186.7C96,181,192,171,288,186.7C384,203,480,245,576,261.3C672,277,768,267,864,245.3C960,224,1056,192,1152,192C1248,192,
+      1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,
+      384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir Form -->
+
+    <!-- footer -->
+    <footer class="text-center pb-3">
+      <p class="text-black">2024 <i class="bi bi-c-circle"></i> <a href="#" class="text-black fw-bold">Lucky Ananda Pradani</a></p>
+    </footer>
+    <!-- akhir footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbytUEPOc0UZzFgByt5_dq6PGT-K2rakzcGRMgcOS2WSFrs9WVAclb2SYfRmwVQkvrsl/exec';
+      const form = document.forms['Submit-Form-to-Google-Sheets'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading'); // Nama kelas telah diperbaiki
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        // Tampilkan tombol loading, sembunyikan tombol kirim
+        btnLoading.classList.remove('d-none');
+        btnKirim.classList.add('d-none');
+        
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            console.log('Berhasil!', response);
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // Scroll ke bagian atas halaman dengan offset
+            const yOffset = -70; // Ubah nilai ini sesuai kebutuhan Anda
+            const y = myAlert.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            // Secara opsional, Anda bisa mereset formulir atau melakukan tindakan lain pada keberhasilan
+            form.reset();
+          })
+          .catch(error => {
+            console.error('Error!', error.message);
+            // Secara opsional, Anda bisa menampilkan pesan kesalahan atau melakukan tindakan lain pada kegagalan
+            myAlert.textContent = 'Pengiriman gagal. Silakan coba lagi.';
+            myAlert.classList.remove('d-none');
+          })
+          .finally(() => {
+            // Sembunyikan tombol loading dan tampilkan tombol kirim, tidak peduli berhasil atau gagal
+            btnLoading.classList.add('d-none');
+            btnKirim.classList.remove('d-none');
+          });
+      });
+    </script>
+    
+  </body>
+</html>

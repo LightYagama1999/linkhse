@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Petro Perkasa Indonesia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #f5842d">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo4.png" alt="Logo" width="50" height="50">
+        </a>
+        
+        </button>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/apd.jpg" alt="Logo Petro" width="250" />
+      <h1 class="display-4 custom-heading">Health Safety Environment </h1>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -10px">
+        <path
+          fill="#f5842d"
+          fill-opacity="1"
+          d="M0,160L48,138.7C96,117,192,75,288,85.3C384,96,480,160,576,181.3C672,203,768,181,864,149.3C960,117,1056,75,1152,58.7C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhirjumbotron -->
+    <!-- Form -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Form Alat Pelindung Diri</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-6">
+            <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbyqa-zYQPLyApfmBJ1Ybr_e65qcbIUq9_DiUmw_2cUWlzZAT7yX2KukKEwc-3ZH-2Y/exec" method="POST">
+              <input type="hidden" value="" name="fileContent" id="fileContent" />
+              <input type="hidden" value="" name="filename" id="filename" />
+              <div class="mb-3">
+                <label for="Nama" class="form-label">Nama</label>
+                <input type="text" id="Nama" name="Nama" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="Jabatan" class="form-label">Jabatan</label>
+                <input type="text" id="Jabatan" name="Jabatan" class="form-control"/>
+              </div>
+              <div class="mb-3">
+                <label for="NIK" class="form-label">NIK</label>
+                <input type="text" id="NIK" name="NIK" class="form-control"/>
+              </div>
+              <div class="mb-3">
+                <label for="Nama_Perusahaan" class="form-label">Nama Perusahaan</label>
+                <input type="text" id="Nama_Perusahaan" name="Nama_Perusahaan" class="form-control" placeholder="Wajib di isi..." required />
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label">Tanggal Pengambilan</label>
+                <input type="date" class="form-control" id="date" aria-describedby="date" name="Tanggal_Ambil" />
+              </div>
+              <div class="mb-3">
+                <label for="APD_1" class="form-label">Alat Pelindung Diri 1</label>
+                <select class="form-select" aria-label="Default select example" name="APD_1" id="jenis_apd">
+                  <option selected>Jenis APD</option>
+                  <option value="Sepatu Safety">Sepatu Safety</option>
+                  <option value="Safety Helmet">Safety Helmet</option>
+                  <option value="Coveral">Coveral</option>
+                  <option value="Seragam Atasan">Seragam Atasan</option>
+                  <option value="Celana Kerja">Celana Kerja</option>
+                  <option value="Kaca Mata">Kaca Mata</option>
+                  <option value="Kaca Mata Warna">Kaca Mata Warna</option>
+                  <option value="Rompi">Rompi</option>
+                  <option value="Sarung Tangan">Sarung Tangan</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_sepatu_container">
+                <label for="Size_Sepatu1" class="form-label">Size Sepatu</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Sepatu1">
+                  <option selected></option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_seragam_container">
+                <label for="Size_Seragam1" class="form-label">Size Seragam</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Seragam1">
+                  <option selected></option>
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XXXL">XXXL</option>
+                </select>
+              </div>
+              <div class="mb-3" id="warna_apd_container">
+                <label for="Warna_APD1" class="form-label">Warna APD</label>
+                <select class="form-select" aria-label="Default select example" name="Warna_APD1">
+                  <option selected></option>
+                  <option value="Hitam">Hitam</option>
+                  <option value="Biru">Biru</option>
+                  <option value="Kuning">Kuning</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Putih">Putih</option>
+                  <option value="Merah">Merah</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="APD_2" class="form-label">Alat Pelindung Diri 2</label>
+                <select class="form-select" aria-label="Default select example" name="APD_2" id="jenis_apde">
+                  <option selected>Jenis APD</option>
+                  <option value="Sepatu Safety">Sepatu Safety</option>
+                  <option value="Safety Helmet">Safety Helmet</option>
+                  <option value="Coveral">Coveral</option>
+                  <option value="Seragam Atasan">Seragam Atasan</option>
+                  <option value="Celana Kerja">Celana Kerja</option>
+                  <option value="Kaca Mata">Kaca Mata</option>
+                  <option value="Kaca Mata Warna">Kaca Mata Warna</option>
+                  <option value="Rompi">Rompi</option>
+                  <option value="Sarung Tangan">Sarung Tangan</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_sepatu_containere">
+                <label for="Size_Sepatu2" class="form-label">Size Sepatu</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Sepatu2">
+                  <option selected></option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_seragam_containere">
+                <label for="Size_Seragam2" class="form-label">Size Seragam</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Seragam2">
+                  <option selected></option>
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XXXL">XXXL</option>
+                </select>
+              </div>
+              <div class="mb-3" id="warna_apd_containere">
+                <label for="Warna_APD2" class="form-label">Warna APD</label>
+                <select class="form-select" aria-label="Default select example" name="Warna_APD2">
+                  <option selected></option>
+                  <option value="Hitam">Hitam</option>
+                  <option value="Biru">Biru</option>
+                  <option value="Kuning">Kuning</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Putih">Putih</option>
+                  <option value="Merah">Merah</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="APD_3" class="form-label">Alat Pelindung Diri 3</label>
+                <select class="form-select" aria-label="Default select example" name="APD_3" id="jenis_apder">
+                  <option selected>Jenis APD</option>
+                  <option value="Sepatu Safety">Sepatu Safety</option>
+                  <option value="Safety Helmet">Safety Helmet</option>
+                  <option value="Coveral">Coveral</option>
+                  <option value="Seragam Atasan">Seragam Atasan</option>
+                  <option value="Celana Kerja">Celana Kerja</option>
+                  <option value="Kaca Mata">Kaca Mata</option>
+                  <option value="Kaca Mata Warna">Kaca Mata Warna</option>
+                  <option value="Rompi">Rompi</option>
+                  <option value="Sarung Tangan">Sarung Tangan</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_sepatu_containerer">
+                <label for="Size_Sepatu3" class="form-label">Size Sepatu</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Sepatu3">
+                  <option selected></option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_seragam_containerer">
+                <label for="Size_Seragam3" class="form-label">Size Seragam</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Seragam3">
+                  <option selected></option>
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XXXL">XXXL</option>
+                </select>
+              </div>
+              <div class="mb-3" id="warna_apd_containerer">
+                <label for="Warna_APD3" class="form-label">Warna APD</label>
+                <select class="form-select" aria-label="Default select example" name="Warna_APD3">
+                  <option selected></option>
+                  <option value="Hitam">Hitam</option>
+                  <option value="Biru">Biru</option>
+                  <option value="Kuning">Kuning</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Putih">Putih</option>
+                  <option value="Merah">Merah</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="APD_4" class="form-label">Alat Pelindung Diri 4</label>
+                <select class="form-select" aria-label="Default select example" name="APD_4" id="jenis_apdert">
+                  <option selected>Jenis APD</option>
+                  <option value="Sepatu Safety">Sepatu Safety</option>
+                  <option value="Safety Helmet">Safety Helmet</option>
+                  <option value="Coveral">Coveral</option>
+                  <option value="Seragam Atasan">Seragam Atasan</option>
+                  <option value="Celana Kerja">Celana Kerja</option>
+                  <option value="Kaca Mata">Kaca Mata</option>
+                  <option value="Kaca Mata Warna">Kaca Mata Warna</option>
+                  <option value="Rompi">Rompi</option>
+                  <option value="Sarung Tangan">Sarung Tangan</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_sepatu_containerert">
+                <label for="Size_Sepatu4" class="form-label">Size Sepatu</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Sepatu4">
+                  <option selected></option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                </select>
+              </div>
+              <div class="mb-3" id="size_seragam_containerert">
+                <label for="Size_Seragam4" class="form-label">Size Seragam</label>
+                <select class="form-select" aria-label="Default select example" name="Size_Seragam4">
+                  <option selected></option>
+                  <option value="M">M</option>
+                  <option value="S">S</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XXXL">XXXL</option>
+                </select>
+              </div>
+              <div class="mb-3" id="warna_apd_containerert">
+                <label for="Warna_APD4" class="form-label">Warna APD</label>
+                <select class="form-select" aria-label="Default select example" name="Warna_APD4">
+                  <option selected></option>
+                  <option value="Hitam">Hitam</option>
+                  <option value="Biru">Biru</option>
+                  <option value="Kuning">Kuning</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Putih">Putih</option>
+                  <option value="Merah">Merah</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="attach" class="form-label">Foto barang</label>
+                <input required id="attach" name="attach" type="file" class="form-control" required />
+              </div>
+              <div class="mb-3 text-center">
+                <button type="button" class="btn btn-primary" onclick="UploadFile();">KIRIM DATA</button>
+                <a href="https://docs.google.com/spreadsheets/d/1G7eYZkkT2cIxjDul2czLwz85jRBIIwXIMyyS1frqV4E/edit#gid=0" class="btn btn-primary" target="_blank">VIEW DATA</a>
+                <button class="btn btn-danger" type="reset">RESET FORM</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="white"
+          fill-opacity="1"
+          d="M0,192L48,186.7C96,181,192,171,288,186.7C384,203,480,245,576,261.3C672,277,768,267,864,245.3C960,224,1056,192,1152,192C1248,192,
+      1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,
+      384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir Form -->
+
+    <!-- footer -->
+    <footer class="text-center pb-3">
+      <p class="text-black">2023 <i class="bi bi-c-circle"></i> <a href="#" class="text-black fw-bold">Lucky Ananda Pradani</a></p>
+    </footer>
+    <!-- akhir footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    >
+  </script>
+  <script src="script.js"></script>
+  </body>
+</html>

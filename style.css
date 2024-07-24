@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: red;
+    height: 100vh;
+    background-image: url(gambar/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.profile p {
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #009140;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid #222;
+    border-radius: 7px;
+    background-color: #eaeaea;
+    margin: 5px 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.link a:hover {
+    background-color: orange;
+}
+
+.footer {
+   text-align: center;
+}
+
+.footer i {
+    color: #009140;
+    font-size: 30px;
+}
